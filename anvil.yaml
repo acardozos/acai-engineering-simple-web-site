@@ -4,10 +4,12 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: Main}
-package_name: M3_App_1
+package_name: ACAI_Engineering_Simple_Web_Site
 allow_embedding: false
-name: M3 App 1
+name: ACAI Engineering Simple Web Site
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 startup_form: null
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 renamed: true

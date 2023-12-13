@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: '@theme:standard-page.html', foreground: '#000000'}
 components:
 - type: ColumnPanel
   properties: {}
@@ -18,13 +18,21 @@ components:
     layout_properties: {grid_position: 'JQPWIT,WERURF'}
     components:
     - name: label_1
-      properties: {}
+      properties: {text: 'ACAI Engineering
+
+          ', role: subheading, font_size: 18}
       type: Label
-      layout_properties: {grid_position: 'ABPNPI,JEXOES'}
+      layout_properties: {grid_position: 'ABPNPI,JEXOES YVHHOP,OMIOCQ'}
+    - name: spacer_1
+      properties: {height: 32}
+      type: Spacer
+      layout_properties: {grid_position: 'ABPNPI,JEXOES GTFTLH,HLUWDC'}
     - name: address_label
-      properties: {text: address, align: center}
+      properties: {text: address, align: center, role: subheading, font_size: 16,
+        foreground: '#000000'}
       type: Label
       layout_properties: {grid_position: 'ABPNPI,PSWFVR OSERFQ,YHIZNV'}
+      data_bindings: []
     - name: label_5
       properties: {text: 'Carrera 17A #22-59
 
@@ -36,30 +44,49 @@ components:
       type: Label
       layout_properties: {grid_position: 'ABPNPI,PSWFVR CXRNIE,ZZEUEH'}
     - name: label_3
-      properties: {}
+      properties: {font_size: 16, foreground: '#000000', role: subheading, align: center,
+        text: company}
       type: Label
       layout_properties: {grid_position: 'ABPNPI,RXCSKZ QEAMLW,PEBIGC'}
-    - name: link_1
-      properties: {}
+    - name: bottom_about_link
+      properties: {align: center, text: about us}
       type: Link
       layout_properties: {grid_position: 'ABPNPI,RXCSKZ CGQFCO,NEZHBO'}
-    - name: link_2
-      properties: {}
+    - name: bottom_contact_link
+      properties: {align: center, text: contact}
       type: Link
       layout_properties: {grid_position: 'ABPNPI,RXCSKZ VTTBOL,SBWFAS'}
     - name: label_4
-      properties: {}
+      properties: {font_size: 16, align: center, text: website info, role: subheading,
+        foreground: '#000000'}
       type: Label
       layout_properties: {grid_position: 'ABPNPI,EEFREO EEGDKV,FLANJJ'}
-    - name: link_3
-      properties: {}
+    - name: bottom_faqs_link
+      properties: {align: center, text: FAQs}
       type: Link
       layout_properties: {grid_position: 'ABPNPI,EEFREO MMDIYK,XPSADC'}
-    - name: link_4
-      properties: {}
+    - name: bottom_privacy_link
+      properties: {align: center, text: privacy policy}
       type: Link
       layout_properties: {grid_position: 'ABPNPI,EEFREO DIREXG,IDRHDM'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - name: pricing_link
+    properties: {text: pricing, role: text}
+    type: Link
+    layout_properties: {}
+  - name: contact_link
+    properties: {text: contact us, role: text}
+    type: Link
+    layout_properties: {}
+  - name: about_link
+    properties: {text: about us, role: text}
+    type: Link
+    layout_properties: {}
+- name: home_link
+  properties: {role: headline, align: center, text: ACAI Engineering}
+  type: Link
+  layout_properties: {slot: title}

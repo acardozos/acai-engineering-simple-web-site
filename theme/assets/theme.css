@@ -98,12 +98,12 @@ a>.anvil-component-icon.right_edge-icon,
 
 /* Typography */
 body {
-  font-family: Roboto, Noto, Arial, sans-serif;
+  font-family: Montserrat, Roboto, Noto, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4286;
   color: %color:On Surface%;
   background-color: %color:Background%;
-  min-height: calc(100vh - 56px)
+  /*min-height: calc(100vh - 56px)*/
 }
 
 @media print {
@@ -126,7 +126,18 @@ color: %color:On Primary Container%;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: %color:Primary 500%;
+  color: %color:Primary%;
+}
+
+.anvil-role-text {
+  font-size: 18 px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.anvil-role-text > .label-text, .anvil-role-text .link-text {
+  padding-top: 0;
+  padding-bottom: 0;  
 }
 
 .anvil-role-display {
@@ -136,9 +147,10 @@ color: %color:On Primary Container%;
 }
 
 .anvil-role-headline {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 400;
+  font-size: 34px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
 }
 
 .anvil-role-title {
@@ -369,7 +381,7 @@ color: %color:On Primary Container%;
 }
 
 .left-nav a:hover, .app-bar a:hover, .app-bar a:active {
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
+  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background 1%;
   opacity: 100%;
 }
 
@@ -413,6 +425,7 @@ color: %color:On Primary Container%;
   
   line-height: 40px;
   font-size: 20px;
+  color: %color:On Surface%;
 
   background-color: %color:Surface%;
   transition: background-color 250ms;

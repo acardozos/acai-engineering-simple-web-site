@@ -49,6 +49,10 @@ roles:
   components: [TextBox, TextArea, DatePicker, DropDown]
 - name: input-error
   components: [TextBox, TextArea, DatePicker, DropDown]
+- name: subheading
+  components: [Label]
+- name: text
+  components: [Label, Link]
 color_scheme:
   preset_groups:
   - name: Colour Scheme
@@ -316,9 +320,9 @@ color_scheme:
   - {name: On Tertiary Container, color: '#370B1E'}
   - {name: Error, color: '#B3261E'}
   - {name: Background, color: '#FFFBFE'}
-  - {name: Surface, color: '#FFFBFE'}
+  - {name: Surface, color: '#6750A4'}
   - {name: On Background, color: '#1C1B1F'}
-  - {name: On Surface, color: '#1C1B1F'}
+  - {name: On Surface, color: '#FFFBFE'}
   - {name: Surface Variant, color: '#E7E0EC'}
   - {name: On Surface Variant, color: '#49454E'}
   - {name: Outline, color: '#79747E'}
@@ -331,3 +335,4 @@ color_scheme:
   - {name: Primary Overlay 1, color: 'rgba(103, 80, 164, 0.05)'}
   - {name: Primary Overlay 2, color: 'rgba(103, 80, 164, 0.08)'}
   - {name: Primary Overlay 3, color: 'rgba(103, 80, 164, 0.11)'}
+  - {name: Background 1, color: '#4D0099'}
