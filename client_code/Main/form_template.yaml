@@ -1,0 +1,65 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: body_panel
+  layout_properties: {slot: default}
+  components:
+  - name: content_panel
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'HTANVP,SCOJLE'}
+  - name: footer_card
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'JQPWIT,WERURF'}
+    components:
+    - name: label_1
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'ABPNPI,JEXOES'}
+    - name: address_label
+      properties: {text: address, align: center}
+      type: Label
+      layout_properties: {grid_position: 'ABPNPI,PSWFVR OSERFQ,YHIZNV'}
+    - name: label_5
+      properties: {text: 'Carrera 17A #22-59
+
+          Apto 303. La Pradera.
+
+          Dosquebradas.
+
+          Risaralda. Colombia', align: center}
+      type: Label
+      layout_properties: {grid_position: 'ABPNPI,PSWFVR CXRNIE,ZZEUEH'}
+    - name: label_3
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'ABPNPI,RXCSKZ QEAMLW,PEBIGC'}
+    - name: link_1
+      properties: {}
+      type: Link
+      layout_properties: {grid_position: 'ABPNPI,RXCSKZ CGQFCO,NEZHBO'}
+    - name: link_2
+      properties: {}
+      type: Link
+      layout_properties: {grid_position: 'ABPNPI,RXCSKZ VTTBOL,SBWFAS'}
+    - name: label_4
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'ABPNPI,EEFREO EEGDKV,FLANJJ'}
+    - name: link_3
+      properties: {}
+      type: Link
+      layout_properties: {grid_position: 'ABPNPI,EEFREO MMDIYK,XPSADC'}
+    - name: link_4
+      properties: {}
+      type: Link
+      layout_properties: {grid_position: 'ABPNPI,EEFREO DIREXG,IDRHDM'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

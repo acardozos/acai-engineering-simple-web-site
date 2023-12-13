@@ -121,6 +121,14 @@ a:hover, a:active {
 color: %color:On Primary Container%;
 }
 
+/* customized subheading and headline roles */
+.anvil-role-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: %color:Primary 500%;
+}
+
 .anvil-role-display {
   font-size: 57px;
   line-height: 64px;
