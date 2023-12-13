@@ -1,3 +1,5 @@
-container: {type: ColumnPanel}
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:landpage.html', visible: true}
 components: []
 is_package: true
