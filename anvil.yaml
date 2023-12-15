@@ -9,7 +9,7 @@ allow_embedding: false
 name: ACAI Engineering Simple Web Site
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {logo_img: 'asset:assets/img/apple-touch-icon.png'}
+metadata: {logo_img: 'asset:assets/img/apple-touch-icon.png', title: ACAI Engineering}
 startup_form: null
 native_deps: {head_html: '<!-- Favicons -->
 
