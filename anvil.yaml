@@ -11,35 +11,19 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
   server_spec: null}
 metadata: {logo_img: 'asset:assets/img/apple-touch-icon.png', title: ACAI Engineering}
 startup_form: null
-native_deps: {head_html: '<!-- Favicons -->
-
-    <link href="_/theme/assets/img/favicon.ico" rel="icon">
-
-    <link href="_/theme/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-
-    <!-- Google Fonts -->
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
-
-
-    <!-- Vendor CSS Files -->
-
-    <link href="_/theme/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-
-    <link href="_/theme/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="_/theme/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
-    <link href="_/theme/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-
-    <link href="_/theme/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-    <link href="_/theme/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-
-    <!-- Template Main CSS File -->
-
-    <link href="_/theme/assets/css/style.css" rel="stylesheet">'}
+native_deps: {head_html: "<!-- Favicons -->\n<link href=\"_/theme/assets/img/favicon.ico\"\
+    \ rel=\"icon\">\n<link href=\"_/theme/assets/img/apple-touch-icon.png\" rel=\"\
+    apple-touch-icon\">\n\n<!-- Google Fonts -->\n<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\"\
+    \ rel=\"stylesheet\" rel=\"preload\" as=\"font\" crossorigin=\"anonymous\">\n\n\
+    <!-- Vendor CSS Files -->\n<link href=\"_/theme/assets/vendor/animate.css/animate.min.css\"\
+    \ rel=\"stylesheet\">\n<link href=\"_/theme/assets/vendor/bootstrap/css/bootstrap.min.css\"\
+    \ rel=\"stylesheet\">\n<link href=\"_/theme/assets/vendor/bootstrap-icons/bootstrap-icons.css\"\
+    \ rel=\"stylesheet\">\n<link href=\"_/theme/assets/vendor/boxicons/css/boxicons.min.css\"\
+    \ rel=\"stylesheet\">\n<link href=\"_/theme/assets/vendor/glightbox/css/glightbox.min.css\"\
+    \ rel=\"stylesheet\">\n<link href=\"_/theme/assets/vendor/swiper/swiper-bundle.min.css\"\
+    \ rel=\"stylesheet\">\n\n<!-- Template Main CSS File -->\n<link href=\"_/theme/assets/css/style.css\"\
+    \ rel=\"stylesheet\">\n\n<!-- My JS scripts -->\n<script>\n  /** var button =\
+    \ document.getElementById(\"sign-in\"); \n  button.addEventListener(\"click\"\
+    , showJsAlert()); **/\n  function showJsAlert() {\n    anvil.call($('.content'),\
+    \ 'my_method', 'world')\n  }\n</script>\n"}
 renamed: true
