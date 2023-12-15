@@ -10,4 +10,5 @@ class Home(HomeTemplate):
 
   def my_method(self, name):
     alert(f"Hello, {name}")
+    print(f"Hello, {name}")
     return 42

@@ -24,6 +24,9 @@ native_deps: {head_html: "<!-- Favicons -->\n<link href=\"_/theme/assets/img/fav
     \ rel=\"stylesheet\">\n\n<!-- Template Main CSS File -->\n<link href=\"_/theme/assets/css/style.css\"\
     \ rel=\"stylesheet\">\n\n<!-- My JS scripts -->\n<script>\n  /** var button =\
     \ document.getElementById(\"sign-in\"); \n  button.addEventListener(\"click\"\
-    , showJsAlert()); **/\n  function showJsAlert() {\n    anvil.call($('.content'),\
-    \ 'my_method', 'world')\n  }\n</script>\n"}
+    , showJsAlert()); **/\n  /**\n  $('.content').on('click', function(e){\n    var\
+    \ linkElement = this;\n    anvil.call(linkElement, \"my_method\", \"World\")\n\
+    \    .then(function(r){\n      console.log(\"The function returned:\", r);\n \
+    \   });\n    e.preventDefault();\n  });\n  **/\n  function showJsAlert() {\n \
+    \   anvil.call($('.content'), \"my_method\", \"World\")\n  }\n</script>\n"}
 renamed: true
