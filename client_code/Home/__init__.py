@@ -9,6 +9,6 @@ class Home(HomeTemplate):
     # Any code you write here will run before the form opens.
 
   def my_method(self, name):
-    alert(f"Hello, {name}")
+    # alert(f"Hello, {name}")
     print(f"Hello, {name}")
     return 42
