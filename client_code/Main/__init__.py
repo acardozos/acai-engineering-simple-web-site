@@ -1,5 +1,6 @@
 from ._anvil_designer import MainTemplate
 from anvil import *
+import anvil.server
 from ..Home import Home
 
 class Main(MainTemplate):
